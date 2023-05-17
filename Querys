@@ -31,11 +31,7 @@ create table producto (
 	Deuda float
 );
 
-	Create table credito (
-	credito_cliente int FOREIGN KEY REFERENCES clientes(Id_clientes),
-	credito_abono float,
-	
-);
+
 
 	create table venta(
 	Id_venta int PRIMARY KEY,
