@@ -1,0 +1,70 @@
+
+insert into clientes (Id_clientes, Nombre_cliente, Telefono_cliente, deuda) values
+ (1,'Dagobeerto Doblado',9654147, 500),
+ (2,'Angelica Castellanos',9655445, 200),
+ (3,'Dagoberto Maradiaga',9874515, 900),
+ (4,'Jorge Alberto',965236548, 1200),
+ (5,'Sergio Doblado',99541796, 300),
+ (6,'Alfredo Gomez',94125987, 450),
+ (7,'Carlos Medina',946811, 700),
+ (8,'Keneth Mata',714682, 1000),
+ (9,'Marcio Moran',9641258, 550),
+ (10,'Martina Erazo',9457815, 1500)
+
+ 
+
+ insert into gastos(Id_gastos,Nombre_gasto, Fecha_gasto, Total_gasto) values
+	(21,'Basura','2023-05-01',700),
+	(22,'Impuesto','2023-05-05', 8000),
+	(23,'Repuestos','2023-05-10', 1200),
+	(24,'Medico','2023-05-20',2500)
+
+	select * from empleados
+	insert into empleados (Id_Empleado, Nombre_empleado, Telefono_Empleado,Turno) values
+
+	(6,'Ernesto Madrid',9854621, 'Vespertino'),
+	(7,'Andres Mejia',96412587, 'Vespertino'),
+	(8,'Germani Martinez',9123642, 'Diurno'),
+	(9,'Siloe Aguilar',795772, 'Diurno')
+
+
+	insert into GastosCasa(Producto_Casa,Cantidad_Casa,Fecha,Total_Casa)values
+	(1, 2,'2023-05-05', 100),
+	(1, 5,'2023-05-11', 500),
+	(1, 3,'2023-05-23', 320),
+	(1, 4,'2023-05-30', 150)
+
+	
+
+
+	insert into proveedores (Provedor_Id, Nombre_Provedor, Provedor_Ofrece) values
+
+	(1,'Carnes el Corral', 'Carne de cerdo y res'),
+	(2,'Pollo Norteno', 'Pollo'),
+	(3,'Churros Diana', 'Churros y gomas'),
+	(4,'Confiteria la bendicion', 'Dulces'),
+	(5,'Pan Hawit', 'Pan'),
+	(6,'Embutidos los hermanos', 'Embutidos'),
+	(7,'Distribuidora Gomez', 'Abarroteria')
+
+
+	insert into producto( Producto_Id,Nombre_producto, Producto_prove_precio, CantidadProd, ProductoP_Total) values
+	(1,'Arroz',100,11,1100),
+	(2,'Pollo',25,30,750),
+	(3,'Carne de res',00,50,4000),
+	(4,'Dulces',10,25,250),
+	(5,'Escobas',20,20,400),
+	(6,'Chorizos',20,13,260),
+	(7,'Dulce venadito',11,20,220),
+	(8,'Ace',30,50,1500),
+	(9,'Chetos',6,30,180),
+	(10,'Maseca',100,10,10000)
+
+
+	insert into venta (Id_venta,Total_venta,Turno,descripcion) values
+
+	(1, 200, 'Diurno', 'Arroz'),
+	(2, 500, 'Diurno', 'Maseca'),
+	(3, 700, 'Diurno', 'Pollo'),
+	(4, 1100, 'Diurno', 'Escobas'),
+	(5, 900, 'Diurno', 'Cloro')
