@@ -1,0 +1,61 @@
+
+create table proveedores (
+  Provedor_Id int PRIMARY KEY,
+  Nombre_Provedor varchar(50),
+  Provedor_Ofrece varchar (50)
+
+);
+
+create table producto (
+	Producto_Id int PRIMARY KEY,
+	Nombre_producto varchar(100),
+	Provedor_Id int FOREIGN KEY REFERENCES proveedores(provedor_id),
+	Producto_prove_precio varchar(50),
+	CantidadProd int,
+	ProductoP_Total float	
+     
+);
+
+	create table empleados (
+	Id_Empleado int PRIMARY KEY,
+	Nombre_empleado varchar(50),
+	Telefono_Empleado varchar (50),
+	Turno varchar(50)
+);
+
+
+	create table clientes (
+	Id_clientes int PRIMARY KEY,
+	Nombre_cliente varchar(75),
+	Telefono_cliente int,
+	Deuda float
+);
+
+	Create table credito (
+	credito_cliente int FOREIGN KEY REFERENCES clientes(Id_clientes),
+	credito_abono float,
+	
+);
+
+	create table venta(
+	Id_venta int PRIMARY KEY,
+	Id_empleado int FOREIGN KEY REFERENCES empleados(Id_Empleado),
+	Total_venta float,
+	Turno varchar (50),
+	descripcion varchar (100)
+
+	);
+
+	create table gastos (
+	Id_gastos int,
+	Nombre_Gasto varchar (50),
+	Fecha_gasto date,
+	Total_Gasto float
+);
+
+create table GastosCasa (
+	Producto_Casa int FOREIGN KEY REFERENCES producto(Producto_Id),
+	Cantidad_Casa int,
+	Fecha date,
+	Total_Casa float
+);
